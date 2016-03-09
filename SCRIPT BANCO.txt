@@ -1,0 +1,39 @@
+create schema projeto_novo;
+
+use projeto_novo;
+
+
+create table Curso(
+
+id int not null primary key auto_increment,
+
+nome varchar(20) not null,
+
+vagas int not null,
+valor varchar(20) not null,
+
+dataInicio VARCHAR(10) not null,
+
+dataTermino VARCHAR(10) not null,
+
+horario VARCHAR(20) NOT null
+
+);
+
+
+
+create table Aluno(
+
+id int not null primary key auto_increment,
+
+nome varchar(50) not null,
+
+telefone varchar(20) not null,
+
+email varchar(50) not null,
+
+rg varchar(15) unique not null,
+
+cpf varchar(15) unique not null
+);
+
